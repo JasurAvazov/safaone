@@ -1,14 +1,14 @@
 import * as functions from "./modules/functions.js";
-import Swiper, {Autoplay, EffectFade, Navigation, Scrollbar} from "swiper";
-import SmoothScroll from 'smoothscroll-for-websites'
+import Swiper, {Autoplay, EffectFade, Mousewheel, Navigation, Scrollbar} from "swiper";
+// import SmoothScroll from 'smoothscroll-for-websites'
 
-SmoothScroll({
-    animationTime: 200,
-    stepSize: 60,
-    keyboardSupport: true,
-    arrowScroll: 100,
-    touchpadSupport: true
-})
+// SmoothScroll({
+//     animationTime: 200,
+//     stepSize: 60,
+//     keyboardSupport: true,
+//     arrowScroll: 100,
+//     touchpadSupport: true
+// })
 
 functions.isWebp();
 
@@ -124,8 +124,31 @@ menu_btn_back.addEventListener('click', () => {
 })
 
 const numberClass = document.querySelectorAll('.show-number')
-numberClass.forEach(el => {
+numberClass?.forEach(el => {
     el.addEventListener('click', () => {
         el.innerHTML = el.getAttribute('data-number')
     })
 })
+
+const swiper1 = new Swiper(".gallerySwiper", {
+    modules: [Scrollbar, Mousewheel],
+    mousewheel: false,
+    slidesPerView: "auto",
+    grabCursor: true,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: false,
+        draggable: true
+    },
+});
+
+const foo = document.querySelectorAll('.gallery-slide').length
+console.log(foo)
+
+// swiper1.on("slideChange", () => {
+//     if (document.querySelector('.lastslide').classList.contains('swiper-slide-active')) {
+//         console.log('tedsad')
+//     }
+// })
+
+
