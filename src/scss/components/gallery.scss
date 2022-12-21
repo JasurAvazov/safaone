@@ -28,7 +28,7 @@
         }
     }
     .swiper-slide{
-        padding-left: 150px;
+        padding-left: 120px;
         color: white;
         .text{
             max-width: 500px;
@@ -58,6 +58,7 @@
         display: flex;
         align-items: center;
         .swiper-scrollbar-drag{
+            max-width: 33px;
             height: 33px;
             border-radius: 16px;
             background-color: #ffffff;
@@ -65,5 +66,3 @@
         }
     }
 }
-
-

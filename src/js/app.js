@@ -142,8 +142,8 @@ const swiper1 = new Swiper(".gallerySwiper", {
     },
 });
 
-const foo = document.querySelectorAll('.gallery-slide').length
-console.log(foo)
+const slides = document.querySelectorAll('.gallery-slide').length
+
 
 // swiper1.on("slideChange", () => {
 //     if (document.querySelector('.lastslide').classList.contains('swiper-slide-active')) {

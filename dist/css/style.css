@@ -1505,7 +1505,7 @@
   height: 600px;
 }
 .gallery .swiper .swiper-slide {
-  padding-left: 150px;
+  padding-left: 120px;
   color: white;
 }
 .gallery .swiper .swiper-slide .text {
@@ -1540,6 +1540,7 @@
           align-items: center;
 }
 .gallery .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+  max-width: 33px;
   height: 33px;
   border-radius: 16px;
   background-color: #ffffff;
