@@ -143,12 +143,5 @@ const swiper1 = new Swiper(".gallerySwiper", {
 });
 
 const slides = document.querySelectorAll('.gallery-slide').length
-
-
-// swiper1.on("slideChange", () => {
-//     if (document.querySelector('.lastslide').classList.contains('swiper-slide-active')) {
-//         console.log('tedsad')
-//     }
-// })
-
-
+console.log(slides)
+document.getElementById('scrollbar').style.width = 27*slides+'px'
