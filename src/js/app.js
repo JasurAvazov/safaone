@@ -30,7 +30,7 @@ const autoSwiper = new Swiper('.autoSwiper',{
         delay: 2000,
     },
 });
-
+ 
 const tabs = () => {
     if(document.querySelectorAll('.floor__tab-item')){
         const tabBtns = document.querySelectorAll('.floor__tab-item');
