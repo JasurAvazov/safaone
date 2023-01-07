@@ -16,13 +16,6 @@
     transition: .3s;
 }
 
-.container{
-    padding: 0 10px;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-}
-
 .header{
     height: var(--header-height);
     display: flex;
@@ -284,12 +277,12 @@
 }
 
 .menu__contactUs-title{
-    font-size: 64px !important;
+    font-size: 64px;
     line-height: 75px;
     color: white;
     font-family: 'Tenor Sans', sans-serif;
     text-transform: uppercase;
-    font-weight: 400 !important;
+    font-weight: 400;
 }
 
 .menu__logo{
